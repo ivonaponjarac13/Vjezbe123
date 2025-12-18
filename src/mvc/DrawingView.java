@@ -18,7 +18,7 @@ import javax.swing.JPanel;
 	  
 	  public void paint(Graphics g)  //OSNOVNA METODA KOJA OMOGUCAVA DA SVE STO SE DODAJE U MODEL BUDE ISCRTANO!!!!!!!
 	  {
-		  Iterator<Point> it = model.getShapes().iterator();
+		  Iterator<Shapes> it = model.getShapes().iterator();
 		  while(it.hasNext())    //sve dok ima oblika crtaj ih
 			  it.next().draw(g);
 	  }

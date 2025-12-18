@@ -5,22 +5,22 @@ import java.util.ArrayList;
 public class DrawingModel {
 	
 	
-	private ArrayList<Point> shapes = new ArrayList<Point>(); //iscrtano se dodaje u listu
-	public void add(Point p) { //na mom projektu je ovo shape
+	private ArrayList<Shapes> shapes = new ArrayList<Shapes>(); //iscrtano se dodaje u listu
+	public void add(Shapes s) { //na mom projektu je ovo shape
 		
-		shapes.add(p);
+		shapes.add(s);
 		 
 	 }
 	
-	public void remove(Point p) {
-		shapes.remove(p);
+	public void remove(Shapes s) {
+		shapes.remove(s);
 	}
 	
-	public Point get(int index) {
+	public Shapes get(int index) {
 		return shapes.get(index);
 	}
 	
-	public ArrayList<Point> getShapes() {
+	public ArrayList<Shapes> getShapes() {
 		return shapes;
 	}
 	//ovaj model je ok za odbranu sluzi za listu... moze da se doda jos nesto u Model. 
